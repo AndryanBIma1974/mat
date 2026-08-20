@@ -27,5 +27,3 @@ st.write("Dataset loaded successfully!")
 
 st.write(data.head())
 
-from google.colab import drive
-drive.mount('/content/drive')
