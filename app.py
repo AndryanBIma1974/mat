@@ -16,15 +16,15 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score
 
-
 st.title("❤️ Heart Disease Prediction")
 
-data = pd.read_csv("/content/heart.csv")
+data = pd.read_csv("heart.csv")
 
 X = data.drop("output", axis=1)
 y = data["output"]
 
 st.write("Dataset loaded successfully!")
+
 st.write(data.head())
 
 from google.colab import drive
